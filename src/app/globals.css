@@ -62,9 +62,9 @@
 
 @layer base {
   * {
-    @apply border-border font-primary leading-loose
+    @apply border-border font-primary;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground leading-loose;
   }
 }
