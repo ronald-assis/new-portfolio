@@ -2,13 +2,14 @@ import { Button } from '@/components/ui/button'
 import { FiDownload } from 'react-icons/fi'
 
 import { Social } from '@/components/Social'
+import { Photo } from '@/components/Photo'
 
 export default function Home() {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col items-center justify-between xl:flex-row xl:pb-24 xl:pt-8">
-          <div className="text-center xl:text-left">
+          <div className="order-2 text-center xl:order-none xl:text-left">
             <span className="text-xl">Software Development</span>
             <h1 className="h1 mb-6">
               Hello I&#39;m <br />{' '}
@@ -36,7 +37,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div>photo</div>
+          <div className="order-1 mb-8 xl:order-none xl:mb-0">
+            <Photo />
+          </div>
         </div>
       </div>
     </section>
